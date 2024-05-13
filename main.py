@@ -5,9 +5,12 @@ import time
 
 print("Добро пожаловать в программу поиска информации в википедии")
 
-def question_input():
-    question = input("введите запрос и нажмите Enter: ")
-    return question
+class Wiki_question:
+    def __init__(self, question):
+        self.question = question
+        question = input("Введите запрос и нажмите Enter: ")
+        self.question = question
+
 
 
 browser = webdriver.Firefox()
